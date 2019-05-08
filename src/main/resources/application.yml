@@ -1,0 +1,23 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: Xy19970726
+    url: jdbc:mysql://localhost:3306/classification?serverTimezone=GMT%2B8&characterEncoding=utf-8&useSSL=false&allowPublicKeyRetrieval=true
+  jpa:
+    show-sql: true
+  thymeleaf:
+    mode: HTML5
+    encoding: UTF-8
+    cache: false
+    servlet:
+      content-type: text/html
+    prefix: classpath:/templates/
+
+mybatis:
+  type-aliases-package: com.classification.mapper
+pagehelper:
+  helper-dialect: mysql
+  #reasonable: true
+  support-methods-arguments: true
+  params: countSql
